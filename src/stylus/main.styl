@@ -1,0 +1,53 @@
+/** Stylus Styles */
+
+@import '../../node_modules/vuetify/src/stylus/settings/_colors'
+
+$theme := {
+  primary: $red.darken-2
+  accent: $red.accent-2
+  secondary: $grey.lighten-1
+  info: $blue.lighten-1
+  warning: $amber.darken-2
+  error: $red.accent-4
+  success: $green.lighten-2
+}
+.amber {
+    background-color: rgb(255, 212, 9);
+    z-index:9999;
+}
+.brand{
+  padding-left:10px;
+  padding-right:10px;
+}
+.langselect {
+  width:70px;
+}
+#keep
+    .v-navigation-drawer__border
+      display: none
+
+.input-group__details {
+    outline:none;
+}
+.input-group__input {
+  border-radius: 3px;
+  background-color: rgb(243, 243, 243);
+  padding:3px;
+}
+.input-group__details, .input-group__details:after, .input-group:not(.input-group--error) .input-group__details:before {
+    background-color: #ffffff;
+    height:0;
+}
+.exit {
+  color: lightgrey;
+  text-transform: capitalize;
+}
+.nav-drawer {
+  z-index:99;
+  position:relative;
+    width: 298px;
+    top: 64px;
+    margin-top:64px;
+}
+
+@import '../../node_modules/vuetify/src/stylus/main'
